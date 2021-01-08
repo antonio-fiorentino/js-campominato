@@ -5,8 +5,12 @@ function randomNumber(min, max) {
 
 var numeri = [];
 
-for (var i = 1; i <= 16; i++) {
-  var random = randomNumber(1, 100);
+while (numeri.length<16) {
+  var random = randomNumber(1, 30);
   console.log(random);
-  numeri.push(random);
+  if (numeri.includes(random)=== false) {
+    numeri.push(random);
+  }else{
+    console.log('numero già esistente');
+  }
 }
