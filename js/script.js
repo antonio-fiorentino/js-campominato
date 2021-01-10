@@ -3,14 +3,33 @@ function randomNumber(min, max) {
   return result;
 }
 
-var numeri = [];
+var numeriPc = [];
+var numeriUtente = [];
 
-while (numeri.length<16) {
-  var random = randomNumber(1, 30);
+while (numeriPc.length<16) {
+  var random = randomNumber(1, 20);
   console.log(random);
-  if (numeri.includes(random)=== false) {
-    numeri.push(random);
+  if (numeriPc.includes(random)=== false) {
+    numeriPc.push(random);
   }else{
     console.log('numero già esistente');
   }
 }
+console.log(numeriPc);
+
+while (numeriUtente.length<4) {
+  var sceltaUtente = prompt('Scegli un numero')
+  if (numeriPc.includes(sceltaUtente)=== false) {
+    numeriUtente.push(sceltaUtente)
+  }else {
+    console.log('Hai perso')
+  }
+  // if (numeriUtente.length === 4) {
+  //   alert('Bravo hai vinto')
+  // }
+}
+console.log(numeriUtente);
+
+
+// else if (numeriUtente.includes(sceltaUtente)=== true) {
+//   alert('Non puoi inserire due volte lo stesso numero')
