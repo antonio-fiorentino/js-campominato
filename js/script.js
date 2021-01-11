@@ -18,18 +18,32 @@ while (numeriPc.length<16) {
 console.log(numeriPc);
 
 while (numeriUtente.length<4) {
-  var sceltaUtente = prompt('Scegli un numero')
-  if (numeriPc.includes(sceltaUtente)=== false) {
-    numeriUtente.push(sceltaUtente)
-  }else {
-    console.log('Hai perso')
+  var sceltaUtente = prompt('Inserisci un numero da 1 a 100')
+  switch (sceltaUtente) {
+    case sceltaUtente > 100 || sceltaUtente < 1:
+      alert('Solo numeri compresi tra 1 e 100')
+      break;
+    case numeriPc.includes(sceltaUtente)=== true:
+      alert('Mi dispiace, hai perso');
+    case   
+    default:
+
   }
-  // if (numeriUtente.length === 4) {
-  //   alert('Bravo hai vinto')
-  // }
 }
-console.log(numeriUtente);
 
-
-// else if (numeriUtente.includes(sceltaUtente)=== true) {
-//   alert('Non puoi inserire due volte lo stesso numero')
+// while (numeriUtente.length<4) {
+//   var sceltaUtente = prompt('Scegli un numero')
+//   if (numeriPc.includes(sceltaUtente)=== false) {
+//     numeriUtente.push(sceltaUtente)
+//   }else {
+//     console.log('Hai perso')
+//   }
+//   // if (numeriUtente.length === 4) {
+//   //   alert('Bravo hai vinto')
+//   // }
+// }
+// console.log(numeriUtente);
+//
+//
+// // else if (numeriUtente.includes(sceltaUtente)=== true) {
+// //   alert('Non puoi inserire due volte lo stesso numero')
