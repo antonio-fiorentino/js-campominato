@@ -27,7 +27,8 @@ while (numeriUtente.length<8) {
     alert('Non puoi inserire lo stesso numero');
   }else if (numeriUtente.includes(sceltaUtente)=== false) {
     numeriUtente.push(sceltaUtente);
-  }else if (numeriUtente.length === 8) {
+  }
+  if (numeriUtente.length === 8) {
     alert('Complimenti hai vinto');
   }
   console.log(numeriUtente);
