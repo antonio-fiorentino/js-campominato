@@ -19,26 +19,41 @@ console.log(numeriPc);
 
 while (numeriUtente.length<8) {
   var sceltaUtente = parseInt(prompt('Inserisci un numero da 1 a 100'));
-  if (numeriUtente.includes(sceltaUtente)=== false) {
-    numeriUtente.push(sceltaUtente);
-  }else if (numeriUtente.includes(sceltaUtente)=== true) {
-    alert('Non puoi inserire lo stesso numero');
-  }else if (sceltaUtente > 100 || sceltaUtente < 1) {
+  if (sceltaUtente > 100 || sceltaUtente < 1) {
     alert('Solo numeri compresi tra 1 e 100');
   }else if (numeriPc.includes(sceltaUtente)=== true) {
     alert('Mi dispiace, hai perso');
-  }else if (numeriUtente === 16) {
+  }else if (numeriUtente.includes(sceltaUtente)=== true) {
+    alert('Non puoi inserire lo stesso numero');
+  }else if (numeriUtente.includes(sceltaUtente)=== false) {
+    numeriUtente.push(sceltaUtente);
+  }else if (numeriUtente.length === 8) {
     alert('Complimenti hai vinto');
   }
+  console.log(numeriUtente);
 }
-console.log(numeriUtente);
+
+// while (numeriUtente.length<8) {
+//   var sceltaUtente = parseInt(prompt('Inserisci un numero da 1 a 100'));
+//   if (numeriUtente.includes(sceltaUtente)=== false) {
+//     numeriUtente.push(sceltaUtente);
+//   }else if (numeriUtente.includes(sceltaUtente)=== true) {
+//     alert('Non puoi inserire lo stesso numero');
+//   }else if (sceltaUtente > 100 || sceltaUtente < 1) {
+//     alert('Solo numeri compresi tra 1 e 100');
+//   }else if (numeriPc.includes(sceltaUtente)=== true) {
+//     alert('Mi dispiace, hai perso');
+//   }else if (numeriUtente.length === 16) {
+//     alert('Complimenti hai vinto');
+//   }
+//
+// }
+// console.log(numeriUtente);
 
 // while (numeriUtente.length<16) {
+//   console.log('siamo nel while');
 //   var sceltaUtente = parseInt(prompt('Inserisci un numero da 1 a 100'));
 //   switch (sceltaUtente) {
-//     case numeriUtente.includes(sceltaUtente)=== false:
-//       numeriUtente.push(sceltaUtente);
-//       break;
 //     case numeriUtente.includes(sceltaUtente)=== true:
 //       alert('Non puoi inserire lo stesso numero');
 //       break;
@@ -51,9 +66,12 @@ console.log(numeriUtente);
 //     case numeriUtente === 16:
 //       alert('Complimenti hai vinto');
 //       break;
-//     default:
+//     case numeriUtente.includes(sceltaUtente)=== false:
+//       numeriUtente.push(sceltaUtente);
+//       break;
 //
 //   }
+//   console.log(numeriUtente);
 // }
 
 // while (numeriUtente.length<4) {
