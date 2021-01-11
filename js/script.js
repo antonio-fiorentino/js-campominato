@@ -21,10 +21,13 @@ while (numeriUtente.length<8) {
   var sceltaUtente = parseInt(prompt('Inserisci un numero da 1 a 100'));
   if (sceltaUtente > 100 || sceltaUtente < 1) {
     alert('Solo numeri compresi tra 1 e 100');
+    break;
   }else if (numeriPc.includes(sceltaUtente)=== true) {
     alert('Mi dispiace, hai perso');
+    break;
   }else if (numeriUtente.includes(sceltaUtente)=== true) {
     alert('Non puoi inserire lo stesso numero');
+    break;
   }else if (numeriUtente.includes(sceltaUtente)=== false) {
     numeriUtente.push(sceltaUtente);
   }
