@@ -6,8 +6,8 @@ function randomNumber(min, max) {
 var numeriPc = [];
 var numeriUtente = [];
 
-while (numeriPc.length<4) {
-  var random = randomNumber(1, 10);
+while (numeriPc.length<16) {
+  var random = randomNumber(1, 100);
   console.log(random);
   if (numeriPc.includes(random)=== false) {
     numeriPc.push(random);
@@ -17,7 +17,7 @@ while (numeriPc.length<4) {
 }
 console.log(numeriPc);
 
-while (numeriUtente.length<8) {
+while (numeriUtente.length<84) {
   var sceltaUtente = parseInt(prompt('Inserisci un numero da 1 a 100'));
   if (sceltaUtente > 100 || sceltaUtente < 1) {
     alert('Solo numeri compresi tra 1 e 100');
@@ -31,7 +31,7 @@ while (numeriUtente.length<8) {
   }else if (numeriUtente.includes(sceltaUtente)=== false) {
     numeriUtente.push(sceltaUtente);
   }
-  if (numeriUtente.length === 8) {
+  if (numeriUtente.length === 84) {
     alert('Complimenti hai vinto');
   }
   console.log(numeriUtente);
